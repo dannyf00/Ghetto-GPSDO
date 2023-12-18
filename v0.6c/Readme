@@ -1,0 +1,15 @@
+//Ghetto GPSDO: dsPIC33
+//
+//   discussed here: https://dannyelectronics.wordpress.com/2023/11/17/ghetto-gpsdo-approach/
+//
+// - version history
+// - v0.1, 11/17/2023: initial implementation
+// - v0.2, 11/18/2023: added a ppsLock indicator, oversampling support and reference frequency output
+// - v0.3, 11/19/2023: supports very long oversampling period (practically unlimited)
+// - v0.4, 11/21/2023: support up to 999,999,999.999999 hz calculation and string formation
+// - v0.5, 11/21/2023: updated documentation
+// - v0.6, 11/21/2023: ppsLock shows lock only if the frequency falls below a pre-specified threshold for a user-specified period of time
+// - v0.6a,11/21/2023: implemented adaptive PID/variable oversampling
+// - v0.6b,11/24/2023: implemented REFCLK1 output and minor bug fixes
+// - v0.6c,12/17/2023: provided guidance for PID tuning.
+//
